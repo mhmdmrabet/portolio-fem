@@ -46,6 +46,12 @@ a:hover {
   text-decoration: none;
 }
 
+/* IMAGE */
+
+img {
+  width: 100%;
+}
+
 /* GRADIENT LINE BREAKS */
 
 .gradient {
@@ -194,8 +200,6 @@ nav a:hover {
 
 #projects img {
   margin: 2rem 0 4rem 0;
-  height: 350px;
-  width: 650px;
   border-left: 1px solid var(--aqua);
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
@@ -238,6 +242,21 @@ footer ul {
 }
 
 /* RESPONSIVE */
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .text {
+    order: 2;
+    text-align: right;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
 
 @media (min-width: 850px) {
   nav {
